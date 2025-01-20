@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/emulogic_font.ttf</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>assets/PAC-FONT.ttf</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>assets/death_gif/death.gif</file>
+    </qresource>
+</RCC>

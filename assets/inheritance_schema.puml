@@ -1,0 +1,24 @@
+@startuml inheritance_schema
+
+rectangle "Entity" as entity
+rectangle "Movable Entity" as movable
+rectangle "Eatable Entity" as eatable
+rectangle "Player" as player #Yellow
+package "Ghosts" {
+    rectangle "Ghost" as ghost
+    rectangle "Pinky" as pinky #Pink
+    rectangle "Blinky" as blinky #Red
+    rectangle "Inky" as inky #LightBlue
+    rectangle "Clyde" as clyde #Orange
+}
+
+entity -r-> movable
+entity -u-> eatable
+movable -d-> player
+movable -> ghost
+ghost -d-> inky
+ghost -d-> blinky
+ghost -d-> pinky
+ghost -> clyde
+
+@enduml
